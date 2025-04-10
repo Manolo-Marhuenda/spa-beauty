@@ -338,6 +338,14 @@ a:hover, a:active, a:focus, a:focus-within {
   text-decoration: underline;
 }
 
+div.container {
+  max-width: 1300px;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /**
  * Clear inner floats
  */
@@ -354,7 +362,7 @@ a:hover, a:active, a:focus, a:focus-within {
  * 3. Leave some space on the edges, especially valuable on small screens
  */
 .container {
-  max-width: 1180px; /* 1 */
+  max-width: 1300px; /* 1 */
   margin-left: auto; /* 2 */
   margin-right: auto; /* 2 */
   padding-left: 20px; /* 3 */
@@ -396,6 +404,200 @@ a:hover, a:active, a:focus, a:focus-within {
 body {
   color: rgb(34, 34, 34);
   font: normal 125%/1.4 "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+header {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+div.nav_principal ul {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 14px;
+}
+div.nav_principal ul li a {
+  color: #264065;
+}
+div.nav_principal ul li:nth-child(5) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.login ul {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  margin-right: -10px;
+  list-style: none;
+  font-size: 14px;
+}
+div.login ul li:nth-child(3) a {
+  color: #264065;
+}
+div.login ul li:nth-child(4) a {
+  display: inline-block;
+  color: white;
+  background-color: #264065;
+  border-radius: 30px;
+  padding: 20px 40px;
+}
+
+body {
+  background-image: url(/img/background.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+div.fondo_mujer {
+  background-image: url(/img/mujer.png);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: 250px 0px;
+}
+
+div.hero {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+}
+div.hero h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 50px;
+  color: #264065;
+  margin-bottom: 0;
+}
+div.hero p {
+  color: #909090;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+div.botton_hero ul {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 50px;
+  margin-left: -30px;
+}
+div.botton_hero ul li:nth-child(1) a {
+  display: inline-block;
+  background-color: #264065;
+  color: white;
+  text-decoration: none;
+  padding: 15px 40px;
+  border-radius: 40px;
+}
+div.botton_hero ul li:nth-child(1) a:hover {
+  text-decoration: underline;
+}
+div.botton_hero ul li:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+div.botton_hero ul li:nth-child(2) img {
+  width: 130px;
+  margin-top: 40px;
+}
+div.botton_hero ul li:nth-child(2) a {
+  margin-left: -30px;
+  color: #264065;
+}
+
+section.numeros {
+  display: flex;
+  max-width: 36%;
+  justify-content: space-between;
+  margin-left: 60px;
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 30px;
+  z-index: 1;
+  transform: translateY(-40px);
+}
+section.numeros article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+section.numeros article img {
+  width: 50px;
+}
+section.numeros article h3 {
+  color: #264065;
+  font-family: "Poppins", sans-serif;
+}
+section.numeros article p {
+  margin-top: 0;
+  text-align: center;
+  color: #909090;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  width: 95px;
+}
+
+aside.opinion1 {
+  width: 280px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  padding: 20px 10px;
+  font-family: "Poppins", sans-serif;
+  translate: 980px -500px;
+}
+aside.opinion1 img {
+  width: 20px;
+  margin-bottom: 0;
+}
+aside.opinion1 p {
+  margin-top: 0;
+  font-size: 10px;
+}
+aside.opinion1 p.nombre {
+  color: #264065;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+aside.opinion2 {
+  width: 280px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  padding: 20px 10px;
+  font-family: "Poppins", sans-serif;
+  translate: 900px -450px;
+}
+aside.opinion2 img {
+  width: 20px;
+  margin-bottom: 0;
+}
+aside.opinion2 p {
+  margin-top: 0;
+  font-size: 10px;
+}
+aside.opinion2 p.nombre {
+  color: #264065;
+  font-weight: 600;
+  font-size: 15px;
 }
 
 /*# sourceMappingURL=main.css.map */
